@@ -30,6 +30,16 @@ This project was developed via GULP. "src" - Source folder, with a source files.
 
 ###How to use:
 Download "build" folder and run index.html via browser.
+If you want to continue developing the page and work with source files, then you need to install NodeJS and Gulp.
+Run a command in project folder:
+```ssh
+    $npm install
+```
+In this case NodeJS Install all node modules of package.json file.
+Run Gulp default task to start a local server and to compile source files into "build" folder:
+```ssh
+    $npm gulp
+```
 
 ##Examples of code:
 ###SASS Stylesheet:
