@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="theHeader">
+        <div class="wrapper">
+            <div class="container">
+                <div class="blockFlex">
+                    <div class="logo"><span class="cPurple">i</span><span class="cBlue">Teacher</span></div>
+                    <div class="search">
+                        <label class="search_icon fieldIcon fa fa-search" for="look_for_a_teacher"></label>
+                        <input class="fField fGray search_field"  type="text" id="look_for_a_teacher" placeholder="Look for a teacher">
+                    </div>
+                    <div class="navigation">
+                        <nav>
+                            <ul class="topNav">
+                                <li class="active"><a href="#">Teachers</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Favorites</a></li>
+                                <li><a href="#">About</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="profile">
+                        <div class="table_profile">
+                            <div class="avatar status_1">
+                                <img src="assets/images/avatar.png" alt="Avatar" class="img-avatar img-circle">
+                            </div>
+                            <div class="name">Phillip Seamor</div>
+                            <div class="dropdown_menu">
+                                <a href="#" class="arrow"  data-target="#dropdown_avatar_menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="avatar_dropdown" id="dropdown_avatar_menu">
+                                    <li><a href="#">Action 1</a></li>
+                                    <li><a href="#">Action 2</a></li>
+                                    <li><a href="#">Action 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="ctWhite ctBordered wrapFlex">
+            <div class="asideFlex">
+                <aside>
+                    <div class="asideNav">
+                        <ul class="aside_list">
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-1"></span>
+                                    <span class="ai_title">Overview</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-2"></span>
+                                    <span class="ai_title">Messages</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-3"></span>
+                                    <span class="ai_title">My Teacher</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-4"></span>
+                                    <span class="ai_title">Workrooms</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-5"></span>
+                                    <span class="ai_title">My Skills</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-6"></span>
+                                    <span class="ai_title">My Media</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-7"></span>
+                                    <span class="ai_title">My Students</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="asideIcon ai-8"></span>
+                                    <span class="ai_title">Account</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="active">
+                                    <span class="asideIcon ai-9"></span>
+                                    <span class="ai_title">Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="contentFlex">
+                <div class="ctWrap">
+                    <div class="titleTabs">
+                        <a href="#" >Your Contracts</a>
+                        <a href="#" class="active">Open Jobs</a>
+                        <a href="#" class="theBtn btnBlue pull-right"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Post Job</a>
+                    </div>
+                    <div class="filerTabs">
+                        <form action="#">
+                            <div class="filterTabs_wrap">
+                                <div class="filter_date fieldIcon_wrap">
+                                    <label  for="filter_tabs_time" class="fieldIcon fa fa-calendar-check-o"></label>
+                                    <input type="text" name="filter_tabs[time]" id="filter_tabs_time" class="fField fGray fStretch field_date">
+                                    <i class="fa fa-caret-down caretIcon" aria-hidden="true"></i>
+                                </div>
+                                <div class="filter_filter fieldIcon_wrap">
+                                    <label  for="filter_tabs_filter" class="fieldIcon fa fa-filter"></label>
+                                    <select name="filter_tabs[filter]" id="filter_tabs_filter" class="fField fGray fStretch field_filte">
+                                        <option selected disabled>Filters</option>
+                                        <option value="opt_1">Option 1</option>
+                                        <option value="opt_2">Option 2</option>
+                                    </select>
+                                </div>
+                                <div class="filter_search fieldIcon_wrap">
+                                    <label class="search_icon fieldIcon fa fa-search" for="filter_tabs_search"></label>
+                                    <input type="text" id="filter_tabs_search" name="filter_tabs[search]" placeholder="Search" class="fField fWhite search_field">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <table class="jobsTable jobsContent">
+                        <thead>
+                            <tr class="tdPadding headRow">
+                                <th>Job</th>
+                                <th>Start - End</th>
+                                <th>Payment</th>
+                                <th>Payed/Budget</th>
+                                <th>Type</th>
+                                <th>Talent</th>
+                                <th>Job Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active job_row tdPadding">
+                                <td>2 PSD to HTML</td>
+                                <td>4rd July 16 - 4rd Oct 16</td>
+                                <td>Fixed</td>
+                                <td>150/120</td>
+                                <td>Payed</td>
+                                <td>Anwar H</td>
+                                <td><a href="#" class="theBtn btnTransparent btnMini">Open</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="7">
+                                    <form action="#">
+                                        <div class="title">Feedback the job</div>
+                                        <div class="descr">
+                                            Let others know about your experience with <a href="#">Anwar</a>
+                                        </div>
+                                        <table class="experienceTable">
+                                            <tr>
+                                                <td>Professional</td>
+                                                <td>
+                                                    <div class="star-rating">
+                                                        <div class="star-rating__wrap">
+                                                            <input class="star-rating__input" id="st_1_5" type="radio" name="st_1" value="5">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_1_5" title="5 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_1_4" type="radio" name="st_1" value="4">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_1_4" title="4 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_1_3" type="radio" name="st_1" value="3">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_1_3" title="3 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_1_2" type="radio" name="st_1" value="2">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_1_2" title="2 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_1_1" type="radio" name="st_1" value="1">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_1_1" title="1 out of 5 stars"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>On time</td>
+                                                <td>
+                                                    <div class="star-rating">
+                                                        <div class="star-rating__wrap">
+                                                            <input class="star-rating__input" id="st_2_5" type="radio" name="st_2" value="5">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_2_5" title="5 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_2_4" type="radio" name="st_2" value="4">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_2_4" title="4 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_2_3" type="radio" name="st_2" value="3">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_2_3" title="3 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_2_2" type="radio" name="st_2" value="2">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_2_2" title="2 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_2_1" type="radio" name="st_2" value="1">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_2_1" title="1 out of 5 stars"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Responsive</td>
+                                                <td>
+                                                    <div class="star-rating">
+                                                        <div class="star-rating__wrap">
+                                                            <input class="star-rating__input" id="st_3_5" type="radio" name="st_3" value="5">
+                                                            <label class="star-rating__ico fa fa-star-o" for="st_3_5" title="5 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_3_4" type="radio" name="st_3" value="4">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_3_4" title="4 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_3_3" type="radio" name="st_3" value="3">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_3_3" title="3 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_3_2" type="radio" name="st_3" value="2">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_3_2" title="2 out of 5 stars"></label>
+                                                            <input class="star-rating__input" id="st_3_1" type="radio" name="st_3" value="1">
+                                                            <label class="star-rating__ico fa fa-star-o fa-lg" for="st_3_1" title="1 out of 5 stars"></label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="addNew">
+                                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> &nbsp; Add new Ffeedback category</a>
+                                        </div>
+                                        <div class="buttonSideBar">
+                                            <a href="#" class="theBtn btnBlue">Finish Job</a>
+                                            <a href="#" class="theBtn btnGray">Back</a>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Google Images</a></td>
+                                <td>4rd July 16 - Present</td>
+                                <td>Per Hour</td>
+                                <td>150(25$/hour)</td>
+                                <td>Internship</td>
+                                <td><a href="#">Smith J.</a></td>
+                                <td><a href="#" class="theBtn btnGreenLink">Success</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9">
+                                    sdgsdgds
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Google Images</a></td>
+                                <td>4rd July 16 - Present</td>
+                                <td>Per Hour</td>
+                                <td>150(25$/hour)</td>
+                                <td>Internship</td>
+                                <td><a href="#">Smith J.</a></td>
+                                <td><a href="#" class="theBtn btnGreenLink">Success</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9">
+                                    sdgsdgds
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Google Images</a></td>
+                                <td>4rd July 16 - Present</td>
+                                <td>Per Hour</td>
+                                <td>150(25$/hour)</td>
+                                <td>Internship</td>
+                                <td><a href="#">Smith J.</a></td>
+                                <td><a href="#" class="theBtn btnGreenLink">Success</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9">
+                                    sdgsdgds
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Google Images</a></td>
+                                <td>4rd July 16 - Present</td>
+                                <td>Per Hour</td>
+                                <td>150(25$/hour)</td>
+                                <td>Internship</td>
+                                <td><a href="#">Smith J.</a></td>
+                                <td><a href="#" class="theBtn btnGreenLink">Success</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9">
+                                    sdgsdgds
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#">Google Images</a></td>
+                                <td>4rd July 16 - Present</td>
+                                <td>Per Hour</td>
+                                <td>150(25$/hour)</td>
+                                <td>Internship</td>
+                                <td><a href="#">Smith J.</a></td>
+                                <td><a href="#" class="theBtn btnGreenLink">Success</a></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9">
+                                    sdgsdgds
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<link rel="stylesheet" href="assets/stylesheets/style.css">
+<script src="assets/javascripts/main.js"></script>

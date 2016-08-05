@@ -1,0 +1,85 @@
+.cPurple
+  color: $cPurple
+.cBlue
+  color: $cBlue
+.theBtn
+  display: inline-block
+  border: 0
+  outline: 0
+  text-decoration: none
+  min-width: 150px
+  height: 43px
+  line-height: 42px
+  border-radius:
+  font-weight: 700
+  font-size: 14px
+  text-align: center
+  border-radius: 21px
+  text-transform: uppercase
+  &:hover
+    text-decoration: none
+  &.btnGray
+    background: $cGrayBtn
+    color: $cWhite
+  &.btnBlue
+    color: $cWhite
+    background: $cBlue
+  &.btnTransparent
+    background: transparent
+    border: 2px solid $cWhite
+    color: $cWhite
+    min-width: 90px
+  &.btnMini
+    min-width: 90px
+    line-height: 26px
+    height: 30px
+  &.btnGreenLink
+    background: transparentize($cWhite, 0.5)
+    border: 1px solid $cGreen
+    font-weight: 400
+    color: $cGreen
+    min-width: 90px
+    line-height: 28px
+    height: 30px
+.fField
+  height: 30px
+  border-radius: 15px
+  border: 1px solid $cGray
+  outline: 0
+  padding: 0 20px
+  width: 190px
+  color: $cDark
+  &.fStretch
+    width: auto
+    padding: 0 20px
+  &.fGray
+    background: $cGray
+    border: 0
+  &.fWhite
+    background: $cWhite
+    border: 1px solid $cBorder
+.fieldIcon_wrap
+  position: relative
+.fieldIcon
+  position: absolute
+  color: inherit
+  left: 7px
+  top: 50%
+  font-size: 16px
+  line-height: 16px
+  margin-top: -8px
+  + input
+    padding-left: 33px
+.ctWhite
+  background: $cWhite
+.ctBordered
+  border: 1px solid $cBorder
+  border-radius: 8px
+  overflow: hidden
+.ctWrap
+  padding: 0 43px 0 31px
+@mixin m-rotate($x:0, $y:0, $z:0, $deg:0, $dur:0)
+  transform: rotate3d($x, $y, $z, $deg * 1deg)
+  transition: ($dur * 1ms)
+@mixin m-transition($dur:100)
+  transition: ($dur * 1ms)
